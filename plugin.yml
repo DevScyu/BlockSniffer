@@ -7,12 +7,8 @@ api: [1.12.0]
 commands:
   bs:
     description: Use /bs for all parameters
-    permission: blocksniffer.access
+    permission: blocksniffer
 permissions:
   blocksniffer:
     default: op
-    description: "Allow use of all bs features"
-    children:
-      blocksniffer.access:
-        default: op
-        description: "Allow use of all bs commands"
+    description: "Allows the use of /bs here"
