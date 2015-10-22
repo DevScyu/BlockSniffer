@@ -34,7 +34,7 @@ class Main extends PluginBase  implements Listener {
 			"# Blocks to ignore" => " Format: BLOCK: true",
 			"Dirt" => true,
 			"Bedrock" => true,
-			"# When to delete old data(days)" => " Default: 7"
+			"# When to delete old data(days)" => " Default: 7",
 			"DaysOld" => 7,
 		));
 		$this->getLogger()->info( TextFormat::GREEN . "BlockSniffer - Enabled!" );
