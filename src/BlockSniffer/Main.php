@@ -89,19 +89,19 @@ class Main extends PluginBase  implements Listener {
                 }else{
                     if(strtolower($command->getName('bl'))) {
                         if(empty($args)) {
-                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world>\n/bs xyz X.Y.Z <worldname>");
+                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world>\n/bs xyz <X-Y-Z> <world>");
                             return true;
                         }
                         if(empty($args[0])) {
-                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world> \n/bs xyz X.Y.Z <worldname>");
+                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world> \n/bs xyz <X-Y-Z> <world>");
                             return true;
                         }
                         if(empty($args[1])) {
-                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world> \n/bs xyz X.Y.Z <worldname>");
+                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world> \n/bs xyz <X-Y-Z> <world>");
                             return true;
                         }
                         if(empty($args[2])) {
-                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world> \n/bs xyz X.Y.Z <worldname>");
+                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world> \n/bs xyz <X-Y-Z> <world>");
                             return true;
                         }
 
