@@ -1,0 +1,18 @@
+name: BlockSniffer
+author: DRedDog
+description: Trace block interaction!
+version: 1.0.0
+main: BlockSniffer\Main
+api: [1.12.0]
+commands:
+  bs:
+    description: Use /bs for all parameters
+    permission: blocksniffer.access
+permissions:
+  blocksniffer:
+    default: op
+    description: "Allow use of all bs features"
+    children:
+      blocksniffer.access:
+        default: op
+        description: "Allow use of all bs commands"
