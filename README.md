@@ -1,4 +1,4 @@
-#--------------------------BlockSniffer--------------------
+#---------------------BlockSniffer----------------------
 
 ##--Features
 * Logs all the placing and breaking of blocks by players
