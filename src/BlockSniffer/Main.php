@@ -30,7 +30,8 @@ class Main extends PluginBase  implements Listener {
 		$this->config = new Config($this->getDataFolder()."config.yml", CONFIG::YAML, array(
 			"Enabled" => true,
 			"# Players to not log" => " Format: NAME: true",
-			"ExamplePlayer" => true,
+			"DRedDog" => true,
+			"DRedDogPE" => true,
 			"# Blocks to ignore" => " Format: BLOCK: true",
 			"Dirt" => true,
 			"Bedrock" => true,
@@ -210,7 +211,7 @@ class Main extends PluginBase  implements Listener {
                 $rowArray = TextFormat::GREEN . $row["name"] . TextFormat::GOLD . " | "  . TextFormat::AQUA . $row["block"] . TextFormat::GOLD . " | "  . TextFormat::RED . $row["action"];
                 $sender->sendMessage(TextFormat::GREEN . "~ " . "$rowArray" . TextFormat::GREEN . "");
             }
-    }
+		}
     
 	#################################
     

@@ -6,9 +6,9 @@ main: BlockSniffer\Main
 api: [1.12.0]
 commands:
   bs:
-    description: Use /bs for all parameters
+    description: Use /bs here
     permission: blocksniffer
 permissions:
   blocksniffer:
-    default: op
+    default: true
     description: "Allows the use of /bs here"
