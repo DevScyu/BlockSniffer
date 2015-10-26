@@ -74,40 +74,24 @@ class Main extends PluginBase  implements Listener {
 								return true;
 							}
                         }
+                        if($args[0] == "about") {
+                            $this->getServer()->broadcastMessage("§aThis server uses the §bBlockSniffer§a plugin created by §cDRedDogPE§a.");
+							$sender->sendMessage("§aView more plugins by §cDRedDogPE§a at §9http://DRedDogPE.github.io");
+                            return true;
+                        }
                         if(!$args[0] == "here") {
                             $sender->sendMessage("~ Usage:\n/bs here <world>");
-                            return true;
-                        }
-                        if($args[1] == "break") {
-                            $sender->sendMessage("~ Please use command in console.");
-                            return true;
-                        }
-                        if($args[1] == "place") {
-                            $sender->sendMessage("~ Please use command in console.");
                             return true;
                         }
                     }
                 }else{
                     if(strtolower($command->getName('bl'))) {
                         if(empty($args)) {
-                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world>\n/bs xyz <X-Y-Z> <world>");
+                            $sender->sendMessage("~ Usage:\n/bs xyz <X-Y-Z> <world>");
                             return true;
                         }
-                        if(empty($args[0])) {
-                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world> \n/bs xyz <X-Y-Z> <world>");
-                            return true;
-                        }
-                        if(empty($args[1])) {
-                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world> \n/bs xyz <X-Y-Z> <world>");
-                            return true;
-                        }
-                        if(empty($args[2])) {
-                            $sender->sendMessage("~ Usage:\n/bs <player> [break/place] <world> \n/bs xyz <X-Y-Z> <world>");
-                            return true;
-                        }
-
-                        $auth = $this->getConfig()->get($args[0]);
-                        if($auth) {
+                        $sniffed = $this->getConfig()->get($args[0]);
+                        if($sniffed) {
                             $sender->sendMessage("~ Player not being logged, case sensitive.");
                             return true;
                         }
