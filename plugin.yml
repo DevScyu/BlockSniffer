@@ -1,5 +1,5 @@
 name: BlockSniffer
-author: DRedDog
+author: DRedDogPE
 description: Trace block interaction!
 version: 1.0.0
 main: BlockSniffer\Main
