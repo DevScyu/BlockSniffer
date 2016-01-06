@@ -30,8 +30,8 @@ class Main extends PluginBase  implements Listener {
 		$this->config = new Config($this->getDataFolder()."config.yml", CONFIG::YAML, array(
 			"Enabled" => true,
 			"# Players to not log" => " Format: NAME: true",
-			"DRedDog" => true,
-			"DRedDogPE" => true,
+			//"DRedDog" => true,
+			//"DRedDogPE" => true,
 			"# Blocks to ignore" => " Format: BLOCK: true",
 			"Dirt" => true,
 			"Bedrock" => true,
